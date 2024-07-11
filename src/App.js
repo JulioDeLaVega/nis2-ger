@@ -85,145 +85,142 @@ function App() {
       <div className="Cont1">
       
       <div className="box">
-        <h3 style={{color:"darkblue"}}><FontAwesomeIcon icon={faMapPin}/>&nbsp;&nbsp;The impact of the NIS2 directive on your organization</h3>
+        <h3 style={{color:"darkblue"}}><FontAwesomeIcon icon={faMapPin}/>&nbsp;&nbsp;Die Auswirkungen der NIS2-Richtlinie auf Ihr Unternehmen</h3>
         <br></br>
-        <p><b>Sector - Is your organization operating in a sector critical for society?</b></p>
+        <p><b>Branche – Ist Ihr Unternehmen in einer für die Gesellschaft kritischen Branche tätig?</b></p>
 
-        <p style={{color:"grey"}}>Sectors in Article 2&nbsp;&nbsp;<span className="sectors click" onClick={ () => setShowsector2(!showsector2)}>Click here to see all sectors</span></p>
+        <p style={{color:"grey"}}>Branchen gemäß Artikel 2&nbsp;&nbsp;<span className="sectors click" onClick={ () => setShowsector2(!showsector2)}>Klicken Sie hier, um alle Branchen zu sehen</span></p>
         {showsector2 ?
           <div className="sectors">
-            <li>Provider of public electronic communications network or services</li>
-            <li>trust service provider</li>
+            <li>Anbieter öffentlicher elektronischer Kommunikationsnetze oder -dienste</li>
+            <li>Trust-Service-Anbieter</li>
             <li>TLD and DNS provider</li>
-            <li>Sole provider of a critical service in a Member State</li>
-            <li>Your entity&#39;s service disruption can significantly impact public safety, security, and health,
-            posing substantial cross-border risks</li>
-            <li>The entity is public administration</li>
+            <li>Anbieter von Top-Level-Domains (TLD) und DNS-Diensten</li>
+            <li>Alleiniger Anbieter eines kritischen Dienstes in einem Mitgliedstaat</li>
+            <li>Störungen Ihrer Dienste können erhebliche Auswirkungen auf die öffentliche Sicherheit, Sicherheit und Gesundheit haben und bedeutsame grenzüberschreitende Risiken darstellen.</li>
           </div>:<></>}
 
         <Form.Check style={{float:"left", display:"flex"}} type="switch" id="default-radio" label="" onChange={ () => setOption1(!option1)}/>
-        {option1 ? <p>&nbsp;Yes</p>:<p style={{color:"grey"}}>&nbsp;No</p>}
+        {option1 ? <p>&nbsp;Ja</p>:<p style={{color:"grey"}}>&nbsp;Nein</p>}
         <br></br>
 
-        <p style={{color:"grey"}}>Sectors in Annex 1 and 2&nbsp;&nbsp;<span className="sectors click" onClick={ () => setShowsector(!showsector)}>Click here to see all sectors</span></p>
+        <p style={{color:"grey"}}>Branchen gemäß Anhang 1 und 2&nbsp;&nbsp;<span className="sectors click" onClick={ () => setShowsector(!showsector)}>Klicken Sie hier, um alle Branchen zu sehen</span></p>
           
           {showsector ?
           <div className="sectors">
-            <li>Energy</li>
+            <li>Energie</li>
             <li>Transport</li>
-            <li>Banking</li>
-            <li>Financial market infrastructures</li>
-            <li>Health</li>
-            <li>Drinking water supply and distribution</li>
-            <li>Waste</li>
+            <li>Bankwesen</li>
+            <li>Finanzmarktinfrastrukturen</li>
+            <li>Gesundheit</li>
+            <li>Trinkwasserversorgung und -verteilung</li>
+            <li>Abfallwirtschaft</li>
             <li>Digital</li>
-            <li>ICT</li>
-            <li>Public</li>
-            <li>Space</li>
-            <li>Waste</li>
-            <li>Manufacture, production and distribution of chemicals</li>
-            <li>Production, processing and distribution of food</li>
-            <li>Manufactures</li>
-            <li>Digital providers</li>
-            <li>Research</li>
+            <li>Informations- und Kommunikationstechnologie (IKT)</li>
+            <li>Öffentliche Verwaltung</li>
+            <li>Raumfahrt</li>
+            <li>Abfallwirtschaft</li>
+            <li>Herstellung, Produktion und Vertrieb von Chemikalien</li>
+            <li>Herstellung, Verarbeitung und Vertrieb von Lebensmitteln</li>
+            <li>Herstellung von Waren</li>
+            <li>Digitale Dienstleister</li>
+            <li>Forschung</li>
           </div>:<></>}
 
            
           <Form.Check style={{float:"left", display:"flex"}} type="switch" id="default-radio" label="" onChange={ () => setOption3(!option3)}/>
-          {option3 ? <p>&nbsp;Yes</p>:<p style={{color:"grey"}}>&nbsp;No</p>}
+          {option3 ? <p>&nbsp;Ja</p>:<p style={{color:"grey"}}>&nbsp;Nein</p>}
           <br></br>
           
          
       
-        <p className="nofloat"><b>Size - Does your organization have an annual turnover of over 10Mio euros, or does it employ more than 50 employees?</b></p>
+        <p className="nofloat"><b>Größe – Hat Ihr Unternehmen einen Jahresumsatz von über 10 Millionen Euro oder beschäftigt es mehr als 50 Mitarbeiter?</b></p>
         <Form.Check style={{float:"left", display:"flex"}} type="switch" id="default-radio" label="" onChange={ () => setOption2(!option2)}/>
-        {option2 ? <p>&nbsp;Yes</p>:<p style={{color:"grey"}}>&nbsp;No</p>}
+        {option2 ? <p>&nbsp;Ja</p>:<p style={{color:"grey"}}>&nbsp;Nein</p>}
         <br></br>
 
           
         <br></br><br></br>
         <div className="boxbox">
-          {affected ? <b>Yes, you are most probably affected by the new directive NIS2</b> : <>No, there is minimal chance that you are impacted by the new directive.</>}
+          {affected ? <b>Höchstwahrscheinlich sind Sie von der neuen Richtlinie betroffen.</b> : <>Es besteht nur eine geringe Wahrscheinlichkeit, dass Sie von der neuen Richtlinie betroffen sind.</>}
         </div>
         </div>
 
 
 
         <div className="box">
-        <h3 style={{color:"darkblue"}}><FontAwesomeIcon icon={faClipboard}/>&nbsp;&nbsp;Level of minimum cybersecurity measures based on Article 21</h3>
+        <h3 style={{color:"darkblue"}}><FontAwesomeIcon icon={faClipboard}/>&nbsp;&nbsp;Niveau der minimalen Cybersicherheitsmaßnahmen gemäß Artikel 21</h3>
         <br></br>
         
         
         <br></br>
-        <p><b>Does your organization have incident reporting mechanisms in place for cybersecurity events?</b></p>
+        <p><b>Verfügt Ihre Organisation über Mechanismen zur Meldung von Cybersicherheitsvorfällen?</b></p>
         <Form.Check style={{float:"left", display:"flex"}} type="switch" id="default-radio" label="" onChange={ () => setOption5(!option5)}/>
-        {option5 ? <p>&nbsp;Yes</p>:<p style={{color:"grey"}}>&nbsp;No</p>}
+        {option5 ? <p>&nbsp;Ja</p>:<p style={{color:"grey"}}>&nbsp;Nein</p>}
 
         <br></br>
-        <p><b>Is your top management involved in cybersecurity and trained accordingly?</b></p>
+        <p><b>Ist Ihre Unternehmensleitung in die Cybersicherheit eingebunden und entsprechend geschult?</b></p>
         <Form.Check style={{float:"left", display:"flex"}} type="switch" id="default-radio" label="" onChange={ () => setOption6(!option6)}/>
-        {option6 ? <p>&nbsp;Yes</p>:<p style={{color:"grey"}}>&nbsp;No</p>}
+        {option6 ? <p>&nbsp;Ja</p>:<p style={{color:"grey"}}>&nbsp;Nein</p>}
 
         <br></br>
-        <p><b>What cybersecurity measures, such as encryption, multi-factor authentication, and zero-trust
-architecture, has your organization implemented based on Article 21?</b></p>
+        <p><b>Welche Cybersicherheitsmaßnahmen hat Ihre Organisation gemäß Artikel 21 implementiert, wie z.B. Verschlüsselung, Mehr-Faktor-Authentifizierung und Zero- Trust-Architektur?</b></p>
         
 
-        <p>Policies on risk analysis and information system security</p>
+        <p>Richtlinien zur Risikoanalyse und Informationssicherheit</p>
         <Form.Check style={{float:"left", display:"flex"}} type="switch" id="default-radio" label="" onChange={ () => setOption7(!option7)}/>
-        {option7 ? <p>&nbsp;Yes</p>:<p style={{color:"grey"}}>&nbsp;No</p>}
+        {option7 ? <p>&nbsp;Ja</p>:<p style={{color:"grey"}}>&nbsp;Nein</p>}
 
         
-        <p>Incident handling procedures</p>
+        <p>Verfahren zur Bearbeitung von Vorfällen</p>
         <Form.Check style={{float:"left", display:"flex"}} type="switch" id="default-radio" label="" onChange={ () => setOption8(!option8)}/>
-        {option8 ? <p>&nbsp;Yes</p>:<p style={{color:"grey"}}>&nbsp;No</p>}
+        {option8 ? <p>&nbsp;Ja</p>:<p style={{color:"grey"}}>&nbsp;Nein</p>}
         
           
 
-        <p>Business continuity practices (backup, recovery, crisis management)</p>
+        <p>Praktiken zur Geschäftskontinuität (Backup, Wiederherstellung, Krisenmanagement)</p>
         <Form.Check style={{float:"left", display:"flex"}} type="switch" id="default-radio" label="" onChange={ () => setOption9(!option9)}/>
-        {option9 ? <p>&nbsp;Yes</p>:<p style={{color:"grey"}}>&nbsp;No</p>}
+        {option9 ? <p>&nbsp;Ja</p>:<p style={{color:"grey"}}>&nbsp;Nein</p>}
       
 
-        <p>Supply chain security policies with suppliers and service providers</p>
+        <p>Sicherheitsrichtlinien für Lieferketten mit Lieferanten und Dienstleistern</p>
         <Form.Check style={{float:"left", display:"flex"}} type="switch" id="default-radio" label="" onChange={ () => setOption10(!option10)}/>
-        {option10 ? <p>&nbsp;Yes</p>:<p style={{color:"grey"}}>&nbsp;No</p>}
+        {option10 ? <p>&nbsp;Ja</p>:<p style={{color:"grey"}}>&nbsp;Nein</p>}
 
       
-        <p>Security in network and information systems development, maintenance, and vulnerability
-handling</p>
+        <p>Sicherheit bei der Entwicklung, Wartung und Verwundbarkeitsbewältigung von Netzwerken und Informationssystemen</p>
         <Form.Check style={{float:"left", display:"flex"}} type="switch" id="default-radio" label="" onChange={ () => setOption11(!option11)}/>
-        {option11 ? <p>&nbsp;Yes</p>:<p style={{color:"grey"}}>&nbsp;No</p>}
+        {option11 ? <p>&nbsp;Ja</p>:<p style={{color:"grey"}}>&nbsp;Nein</p>}
         
         
-        <p>Assessment of cybersecurity risk-management effectiveness</p>
+        <p>Bewertung der Effektivität des Risikomanagements in der Cybersicherheit</p>
         <Form.Check style={{float:"left", display:"flex"}} type="switch" id="default-radio" label="" onChange={ () => setOption12(!option12)}/>
-        {option12 ? <p>&nbsp;Yes</p>:<p style={{color:"grey"}}>&nbsp;No</p>}
+        {option12 ? <p>&nbsp;Ja</p>:<p style={{color:"grey"}}>&nbsp;Nein</p>}
 
         
-        <p>Basic cyber hygiene practices and cybersecurity training</p>
+        <p>Grundlegende Cybersicherheitspraktiken und Schulungen</p>
         <Form.Check style={{float:"left", display:"flex"}} type="switch" id="default-radio" label="" onChange={ () => setOption13(!option13)}/>
-        {option13 ? <p>&nbsp;Yes</p>:<p style={{color:"grey"}}>&nbsp;No</p>}
+        {option13 ? <p>&nbsp;Ja</p>:<p style={{color:"grey"}}>&nbsp;Nein</p>}
 
       
-        <p>Cryptography and encryption procedures and policies</p>
+        <p>Verfahren und Richtlinien zur Kryptographie und Verschlüsselung</p>
         <Form.Check style={{float:"left", display:"flex"}} type="switch" id="default-radio" label="" onChange={ () => setOption14(!option14)}/>
-        {option14 ? <p>&nbsp;Yes</p>:<p style={{color:"grey"}}>&nbsp;No</p>}
+        {option14 ? <p>&nbsp;Ja</p>:<p style={{color:"grey"}}>&nbsp;Nein</p>}
 
       
-        <p>Human resources security, access control policies, and asset management</p>
+        <p>Sicherheit der Personalressourcen, Zugangskontrollrichtlinien und Vermögensverwaltung</p>
         <Form.Check style={{float:"left", display:"flex"}} type="switch" id="default-radio" label="" onChange={ () => setOption15(!option15)}/>
-        {option15 ? <p>&nbsp;Yes</p>:<p style={{color:"grey"}}>&nbsp;No</p>}
+        {option15 ? <p>&nbsp;Ja</p>:<p style={{color:"grey"}}>&nbsp;Nein</p>}
 
         
-        <p>Use of multi-factor authentication or authentication solutions</p>
+        <p>Nutzung von Mehr-Faktor-Authentifizierung oder Authentifizierungslösungen</p>
         <Form.Check style={{float:"left", display:"flex"}} type="switch" id="default-radio" label="" onChange={ () => setOption16(!option16)}/>
-        {option16 ? <p>&nbsp;Yes</p>:<p style={{color:"grey"}}>&nbsp;No</p>}
+        {option16 ? <p>&nbsp;Ja</p>:<p style={{color:"grey"}}>&nbsp;Nein</p>}
 
         
-        <p>Secured voice, video, text, and emergency communication systems</p>
+        <p>Sicherung von Sprach-, Video-, Text- und Notfallkommunikationssystemen</p>
         <Form.Check style={{float:"left", display:"flex"}} type="switch" id="default-radio" label="" onChange={ () => setOption17(!option17)}/>
-        {option17 ? <p>&nbsp;Yes</p>:<p style={{color:"grey"}}>&nbsp;No</p>}
+        {option17 ? <p>&nbsp;Ja</p>:<p style={{color:"grey"}}>&nbsp;Nein</p>}
 
         
 
@@ -233,9 +230,9 @@ handling</p>
         <div className="boxbox">
 
         {compliance < 60 ?
-        <p style={{color: "red"}}><b>Your level of cybersecurity maturity to NIS2 is at {compliance}%.</b></p>
+        <p style={{color: "red"}}><b>Ihr Cybersicherheitsniveau gemäß NIS2 beträgt aktuell {compliance}%.</b></p>
         :
-        <p style={{color: "green"}}><b>Your level of cybersecurity maturity to NIS2 is at {compliance}%. &nbsp;</b></p>
+        <p style={{color: "green"}}><b>Ihr Cybersicherheitsniveau gemäß NIS2 beträgt aktuell {compliance}%. &nbsp;</b></p>
         }
 
         <ProgressBar now={compliance} />

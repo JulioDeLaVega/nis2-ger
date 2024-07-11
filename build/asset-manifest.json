@@ -1,0 +1,16 @@
+{
+  "files": {
+    "main.css": "/nis2/static/css/main.2e63f286.css",
+    "main.js": "/nis2/static/js/main.42590b67.js",
+    "static/js/787.dbe46e79.chunk.js": "/nis2/static/js/787.dbe46e79.chunk.js",
+    "static/media/logo.svg": "/nis2/static/media/logo.6ce24c58023cc2f8fd88fe9d219db6c6.svg",
+    "index.html": "/nis2/index.html",
+    "main.2e63f286.css.map": "/nis2/static/css/main.2e63f286.css.map",
+    "main.42590b67.js.map": "/nis2/static/js/main.42590b67.js.map",
+    "787.dbe46e79.chunk.js.map": "/nis2/static/js/787.dbe46e79.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.2e63f286.css",
+    "static/js/main.42590b67.js"
+  ]
+}
